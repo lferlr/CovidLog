@@ -1,0 +1,35 @@
+.main-header {
+    height: 30px;
+    padding: 20px 40px;
+    display: flex;
+    background-color: var(--color-darkslategray);
+  }
+  
+  .logo {
+    width: 50px;
+    height: 40px;
+    margin-top: 1px;
+    /* margin: 1px;
+    padding: 1px; */
+    color: #00b154;
+  }
+
+  .logo-text {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 15px;
+  }
+  
+  .logo-text-1 {
+    color: #FFF;
+  }
+  
+  .logo-text-2 {
+    color: #00b154;
+  }
+  
+  @media (max-width: 850px) {
+    .main-header {
+      justify-content: center;
+    }
+  }
