@@ -7,8 +7,7 @@ type Props = {
 }
 
 const Filters = ({ link, linkText }: Props) => (
-    <div className="filters-container records-actions">
-        <h1>Brasil</h1>
+    <div className="filters-container records-actions">    
         <Link to={link}>
             <button className="action-filters">
                 {linkText}
