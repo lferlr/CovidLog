@@ -4,22 +4,11 @@ import Filters from '../../components/Filters';
 import api from '../../services/api';
 import { formatDate } from './helpers';
 
-
-
 const Records = () => {
-    // const [recordsResponse, setRecordsResponse] = useState([]);
     const [activePage, setActivePage] = useState(0);
     const [uf, setUf] = useState();
     const [lists, setLists] = useState<any[]>([]);
     const [filter, setFilter] = useState('Countries');
-
-    //FUNCIONANDO É ISso
-    // useEffect(() => {
-    //     api.get('/live/country/brazil')
-    //     .then(response => {
-    //         setLists(response.data);
-    //     })
-    // })
 
     useEffect(() => {
         api.get('/summary')
@@ -45,15 +34,16 @@ const Records = () => {
     }
 
     return (
-        
         <div className="page-container">
-            <select onChange={handleFilter}>
-                {lists.map(list => 
-                    <option value={list.Country}>{list.Country}</option>    
-                )}
-            </select>
-            <button onClick={handleSearch}>Buscar</button>
             <Filters link="/charts" linkText="VER GRÁFICO" />
+            <div className="filter-box">
+                <select onChange={handleFilter} className="filter-select">
+                    {lists.map(list => 
+                        <option value={list.Country}>{list.Country}</option>    
+                    )}
+                </select>
+                <button onClick={handleSearch} className="filter-button">Buscar</button>
+            </div>
             <table className="records-table" cellPadding="0" cellSpacing="0">
                 <thead>
                     <tr>

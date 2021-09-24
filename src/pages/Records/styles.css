@@ -11,12 +11,12 @@
    
   .records-table {
     width: 100%;
-    border-bottom: 10px solid #00b154;
+    border-bottom: 10px solid var(--color-green);
     border-radius: 0 0 10px 10px;
   }
   
   .records-table thead {
-    background-color: #00b154;
+    background-color: var(--color-green);
     text-align: left;
     color: #0E1B28;
     border-radius: 10px;
@@ -92,18 +92,42 @@
   }
   
   .filters-container .clean-filters:hover {
-    background-color: #00b154;
+    background-color: var(--color-green);
   }
   
   .filters-container .action-filters {
-    background-color: #00b154;
+    background-color: var(--color-green);
     color: #0E1B28;
   }
   
   .filters-container .action-filters:hover {
-    background-color: #00b154;
+    background-color: var(--color-green);
   }
 
   .records-text-secondary {
     color: #e04848;
+  }
+
+  .filter-box {
+    background-color: #37474F;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 3  0px;
+  }
+
+  .filter-button {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 13px 60px;
+  }
+
+  .filter-select {
+    width: 300px;
+    height: 43px;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
   }

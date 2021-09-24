@@ -1,4 +1,4 @@
-.home-container {
+  .home-container {
     margin-top: 150px;
     display: flex;
     justify-content: center;
@@ -11,12 +11,12 @@
   
   .home-text-title {
     font-size: 55px;
-    color: var(--color-turquoise);
+    color: var(--color-green);
   }
   
   .home-text-subtitle {
     font-size: 24px;
-    color: var(--color-coral);
+    color: #FFFFFF;
   }
   
   .home-actions {
@@ -26,22 +26,22 @@
   }
   
   .home-btn {
-    background-color: var(--color-turquoise);
+    background-color: var(--color-green);
     border-radius: 10px 0px 0px 10px;
-    color: var(--color-black);
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 24px;
     padding: 20px 45px;
   }
   
   .home-btn:hover {
-    background-color: #04c7ef;
+    background-color: var(--color-green);
   }
   
   .home-btn-icon {
     border-radius: 0px 10px 10px 0px;
     width: 70px;
-    background-color: var(--color-coral);
+    background-color: var(--color-green);
     display: flex;
     align-items: center;
     justify-content: center;
